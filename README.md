@@ -32,7 +32,7 @@ To create a new module in Xperience by Kentico, you should follow this [document
 
 Method definition:
 ```csharp
-void AddChannelCustomSettings(this IServiceCollection builder);
+void AddChannelCustomSettings(this IServiceCollection services);
 ```
 Example of configuration for DancingGoat site (Program.cs):
 ```csharp

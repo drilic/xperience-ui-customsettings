@@ -16,7 +16,7 @@ namespace EXLRT.Xperience.UI.ChannelCustomSettings.Models
 
 
         // security
-        [NumberInputComponent(Label = "Basic Auth Status", Order = 201, ExplanationText = "Basic Authentication, to prevent accessing (0 : Ignore, 1 : All Non-Admin, 2 : Hangfire Only)")]
+        [NumberInputComponent(Label = "Basic Auth Status", Order = 201, ExplanationText = "Basic Authentication, to prevent accessing (0 : No Basic Auth, 1 : All Public Pages,  2 : All Pages)")]
         [MinimumIntegerValueValidationRule(0)]
         [MaximumIntegerValueValidationRule(2)]
         [XperienceSettingsData("Security.BasicAuthStatus", 1)]
